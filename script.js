@@ -64,7 +64,7 @@ const positiveMindsets = [
 
 
 const randomSelect = arr => {
-    return Math.floor(Math.random() * arr.length);
+    return arr[Math.floor(Math.random() * arr.length)];
 }
 
 console.log(randomSelect(positiveMindsets));
