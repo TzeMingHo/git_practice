@@ -63,6 +63,12 @@ const positiveMindsets = [
 ];
 
 
+const randomSelect = arr => {
+    return Math.floor(Math.random() * arr.length);
+}
+
+console.log(randomSelect(positiveMindsets));
+
 const messages = () => {
 
 }
