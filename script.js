@@ -67,8 +67,11 @@ const randomSelect = arr => {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-console.log(randomSelect(positiveMindsets));
 
-const messages = () => {
-
+const messages = () =>{
+    return `Fortune may cause ${randomSelect(difficultSituations)},
+    but it can't diminish ${randomSelect(positiveMindsets)}.
+    Remember, ${randomSelect(slogen)}`;
 }
+
+console.log(messages());
